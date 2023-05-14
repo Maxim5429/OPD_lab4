@@ -12,7 +12,6 @@ def form():
     if request.method == 'POST':
         login = request.form.get('login')
         password = request.form.get('password')
-        #f=open().readlines()
         with open('login.txt','r') as file:
             f=file.readlines()
         admin_login = f[0].strip()
